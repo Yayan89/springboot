@@ -1,0 +1,17 @@
+#https://cloud.spring.io/spring-cloud-config/reference/html/#_quick_start
+#spring config-client directs to 8888 by default
+#https://cloud.spring.io/spring-cloud-config/reference/html/#config-first-bootstrap
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #https://cloud.spring.io/spring-cloud-config/reference/html/#_pattern_matching_and_multiple_repositories
+          uri: https://github.com/Yayan89/springboot-config-files.git
+          clone-on-start: true
+          search-paths: config-client
+
+#  http://localhost:8888/config-client/default
+#  http://localhost:8888/config-client/dev
