@@ -2,6 +2,5 @@ springboot
 
 
 Resttemplate tomorrow 
-Restexeptions tomorrow
-Optional tomorrow
 jackson 
+Mapstruct with Builder example
