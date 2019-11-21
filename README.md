@@ -1,13 +1,11 @@
 springboot
 
-WebFlux
-Resttemplate important
-jackson important
-
-Mapstruct important
 
 FilterRegistrationBean
 Cors
 
+
 Mockito
-Assertj important
+jackson important
+Resttemplate important
+Mapstruct important
