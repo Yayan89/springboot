@@ -1,10 +1,13 @@
 springboot
 
 WebFlux
-Resttemplate tomorrow 
-jackson 
-Mapstruct with Builder example
+Resttemplate important
+jackson important
+
+Mapstruct important
 
 FilterRegistrationBean
 Cors
 
+Mockito
+Assertj important
