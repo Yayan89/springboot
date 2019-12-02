@@ -25,7 +25,6 @@ resttemplate with UriComponentsBuilder(params) + fromthttpURL methods
 	remove getter and setters
 	
 	  @JsonPOJOBuilder(withPrefix = "")
-  public static final class ComptePortefeuilleBuilder {
-  }
+  
 	
 	superbuilder lombok
