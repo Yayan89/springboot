@@ -1,0 +1,5 @@
+security:
+  oauth2:
+    client:
+      client_id: SPoblm
+      client_secret: noonewilleverguess
