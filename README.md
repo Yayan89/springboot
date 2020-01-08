@@ -8,17 +8,9 @@ Cors
 
 
 jackson important
-Resttemplate important
+
 Mapstruct important
 
-resttemplate with UriComponentsBuilder(params) + fromthttpURL methods
-
-   return restTemplate.exchange(builder.toUriString(),
-                HttpMethod.GET,
-                new HttpEntity<>(headers),
-                AccountSearch.class)
-                .getBody();
-				
 				
 	
 	Json Deseralize with builder
