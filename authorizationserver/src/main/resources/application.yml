@@ -2,4 +2,6 @@ security:
   oauth2:
     client:
       client_id: SPoblm
-      client_secret: noonewilleverguess
+      client_secret: poblmpass
+
+#      curl SPoblm:poblmpass@localhost:8080/oauth/token -dgrant_type=client_credentials -dscope=any -dusername=user -dpassword=dbfe7e2d-544b-4bbd-8a0a-fc825a64d9be
