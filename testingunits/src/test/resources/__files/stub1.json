@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/body-file"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "firstname": "Jason",
+      "lastname": "Black"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
