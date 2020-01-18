@@ -5,7 +5,7 @@ buildscript {
 		maven { url 'https://repo.spring.io/snapshot' }
 	}
 	dependencies {
-		classpath 'org.springframework.cloud:spring-cloud-contract-gradle-plugin:2.2.2.BUILD-SNAPSHOT'
+		classpath 'org.springframework.cloud:spring-cloud-contract-gradle-plugin:2.2.1.BUILD-SNAPSHOT'
 	}
 }
 
