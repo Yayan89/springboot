@@ -1,11 +1,12 @@
 package com.datson.poc;
 
+import com.datson.poc.controller.FraudController;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTestClass {
 
-    @Before
+    @BeforeEach
     public void setup() {
         RestAssuredMockMvc.standaloneSetup(new FraudController());
     }
