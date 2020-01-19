@@ -16,6 +16,7 @@ plugins {
 }
 
 apply plugin: 'spring-cloud-contract'
+apply plugin: 'maven-publish'
 
 group = 'com.datson'
 version = '0.0.1-SNAPSHOT'
@@ -29,6 +30,7 @@ configurations {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 	maven { url 'https://repo.spring.io/milestone' }
 	maven { url 'https://repo.spring.io/snapshot' }
 }

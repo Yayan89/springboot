@@ -11,10 +11,11 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureStubRunner(
     stubsMode = StubRunnerProperties.StubsMode.LOCAL,
-    ids = "com.datson:cloudcontract-producer:+:8080"
+    ids = "com.datson:cloudcontract-producer:+:stubs:0.0.1:8090"
 )
 @AutoConfigureMockMvc
 public class LoanApplicationServiceTest {
@@ -23,8 +24,7 @@ public class LoanApplicationServiceTest {
     MockMvc mockMvc;
 
     @Test
-    public void given_WhenPassEvenNumberInQueryParam_ThenReturnEven()
-        throws Exception {
+    public void given_WhenPassEvenNumberInQueryParam_ThenReturnEven() throws Exception {
 
         mockMvc.perform(MockMvcRequestBuilders.put("/fraudcheck")
             .contentType(MediaType.APPLICATION_JSON))

@@ -1,7 +1,18 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		mavenLocal()
+		maven { url "https://repo.spring.io/snapshot" }
+		maven { url "https://repo.spring.io/milestone" }
+		maven { url "https://repo.spring.io/release" }
+	}
+}
+
 plugins {
 	id 'org.springframework.boot' version '2.2.3.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
+	id 'maven-publish'
 }
 
 group = 'com.datson'
@@ -16,7 +27,16 @@ configurations {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
+	maven { url "https://repo.spring.io/snapshot" }
+	maven { url "https://repo.spring.io/milestone" }
+	maven { url "https://repo.spring.io/release" }
 }
+
+apply plugin: 'groovy'
+apply plugin: 'org.springframework.boot'
+apply plugin: "io.spring.dependency-management"
+apply plugin: 'maven-publish'
 
 ext {
 	set('springCloudVersion', "Hoxton.SR1")
@@ -30,8 +50,11 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	testImplementation group: 'org.springframework.cloud', name: 'spring-cloud-contract-wiremock', version: '2.2.1.RELEASE'
-	testCompile group: 'org.springframework.cloud', name: 'spring-cloud-starter-contract-stub-runner', version: '2.2.1.RELEASE'
 
+	testCompile group: 'org.springframework.cloud', name: 'spring-cloud-starter-contract-stub-runner', version: '2.2.1.RELEASE'
+	implementation("com.datson:cloudcontract-producer:+:stubs") {
+		transitive = false
+	}
 }
 
 dependencyManagement {
