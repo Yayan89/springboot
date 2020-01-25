@@ -52,6 +52,7 @@ dependencies {
 	testImplementation group: 'org.springframework.cloud', name: 'spring-cloud-contract-wiremock', version: '2.2.1.RELEASE'
 
 	testCompile group: 'org.springframework.cloud', name: 'spring-cloud-starter-contract-stub-runner', version: '2.2.1.RELEASE'
+	//this will be on .m2 or simply in your artifactory
 	implementation("com.datson:cloudcontract-producer:+:stubs") {
 		transitive = false
 	}

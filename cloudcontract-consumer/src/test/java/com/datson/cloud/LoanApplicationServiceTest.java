@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureStubRunner(
-    stubsMode = StubRunnerProperties.StubsMode.LOCAL,
+    stubsMode = StubRunnerProperties.StubsMode.CLASSPATH,
     ids = "com.datson:cloudcontract-producer:+:stubs:0.0.1:8090"
 )
 @AutoConfigureMockMvc
@@ -24,11 +24,13 @@ public class LoanApplicationServiceTest {
     MockMvc mockMvc;
 
     @Test
-    public void given_WhenPassEvenNumberInQueryParam_ThenReturnEven() throws Exception {
+    public void check_fraudCheck() throws Exception {
 
         mockMvc.perform(MockMvcRequestBuilders.put("/fraudcheck")
             .contentType(MediaType.APPLICATION_JSON))
             .andExpect(MockMvcResultMatchers.status().isOk())
-            .andExpect(MockMvcResultMatchers.content().string("Even"));
+            .andExpect(MockMvcResultMatchers.jsonPath("$.['fraudCheckStatus']").value("FRAUD"))
+            .andExpect(MockMvcResultMatchers.jsonPath("$.['rejection.reason']").value("Amount too high"))
+        ;
     }
 }
