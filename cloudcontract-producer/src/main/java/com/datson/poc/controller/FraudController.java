@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FraudController {
 
-    @PutMapping(value = "/fraudcheck", consumes="application/json", produces="application/json")
+    @PutMapping(value = "/fraudcheck", consumes="application/json;charset=utf-8", produces="application/json;charset=utf-8")
     public String check(@RequestBody LoanRequest loanRequest) {
 
         if (loanRequest.getLoanAmount() > 10000) {

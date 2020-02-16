@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae85b8c8-6e03-4f38-a2a4-57e7c123983a" name="Default Changelist" comment="" />
+    <list default="true" id="ae85b8c8-6e03-4f38-a2a4-57e7c123983a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1XOw6oAFjWUrdlj1q5337BKMe3O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,16 +30,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.10.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot/cloudcontract-producer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-small-poc" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/contracts" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,6 +61,8 @@
       <updated>1580930275301</updated>
       <workItem from="1580930278248" duration="3138000" />
       <workItem from="1580944446686" duration="2614000" />
+      <workItem from="1581099384644" duration="9198000" />
+      <workItem from="1581875246581" duration="56000" />
     </task>
     <servers />
   </component>
@@ -56,13 +74,26 @@
       <screen x="0" y="27" width="1920" height="1006" />
     </state>
     <state x="555" y="190" width="800" height="677" key="#Project_Structure/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1580930357695" />
-    <state x="743" y="287" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580946130678">
+    <state x="804" y="421" width="302" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581112255253">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="804" y="421" width="302" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1581112255253" />
+    <state x="743" y="287" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581875253780">
       <screen x="0" y="27" width="1920" height="1006" />
     </state>
     <state x="743" y="287" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1580946130678" />
-    <state width="659" height="261" key="javadoc.popup.new" timestamp="1580944989637">
+    <state x="743" y="287" key="FileChooserDialogImpl/0.27.1920.1006@0.27.1920.1006" timestamp="1581875253780" />
+    <state x="449" y="164" width="1024" height="845" key="SettingsEditor" timestamp="1581112308275">
       <screen x="0" y="27" width="1920" height="1006" />
     </state>
-    <state width="659" height="261" key="javadoc.popup.new/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1580944989637" />
+    <state x="449" y="164" width="1024" height="845" key="SettingsEditor/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1581112308275" />
+    <state width="659" height="261" key="javadoc.popup.new" timestamp="1581112495172">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state width="659" height="261" key="javadoc.popup.new/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1581112495172" />
+    <state x="685" y="436" width="540" height="186" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1581115973284">
+      <screen x="0" y="27" width="1920" height="1006" />
+    </state>
+    <state x="685" y="436" width="540" height="186" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1006/1920.0.1920.1080@0.27.1920.1006" timestamp="1581115973284" />
   </component>
 </project>

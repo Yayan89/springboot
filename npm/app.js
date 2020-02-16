@@ -1,7 +1,7 @@
 var request = require('request');
 
 request.get(
-    'http://localhost:9090/api/something',
+    'http://localhost:9090/fraudcheck',
     function (error, response, body) {
         if(!error && response.statusCode >= 200 && response.statusCode < 400) {
             console.log(body)

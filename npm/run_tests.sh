@@ -13,10 +13,10 @@ pkill -f "node app" || echo "Failed to kill app"
 echo "Working around certificate issues" && npm config set strict-ssl false
 yes | npm install || echo "Failed to install packages"
 yes | npm install express || echo "Failed to install package"
-nohup node app &
+nohup node app &  #this will execute our node.js app
 
 # Execute contract tests
-./run_contract_tests.sh
+./run_contract_tests_2.sh
 
 # Kill app
 pkill -f "node app"

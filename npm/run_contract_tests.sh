@@ -3,15 +3,22 @@
 set -o errexit
 
 SC_CONTRACT_DOCKER_VERSION="${SC_CONTRACT_DOCKER_VERSION:-2.2.0.BUILD-SNAPSHOT}"
+#APP_IP="$( ./whats_my_ip.sh )"
 APP_IP="$( ./whats_my_ip.sh )"
-APP_PORT="${APP_PORT:-9876}"
+#APP_PORT="${APP_PORT:-9876}"
 ARTIFACTORY_PORT="${ARTIFACTORY_PORT:-8081}"
-APPLICATION_BASE_URL="http://${APP_IP}:${APP_PORT}"
-ARTIFACTORY_URL="http://${APP_IP}:${ARTIFACTORY_PORT}/artifactory/gradle-release/"
+#APPLICATION_BASE_URL="http://${APP_IP}:${APP_PORT}"
+APPLICATION_BASE_URL="http://${APP_IP}"
+ARTIFACTORY_URL="http://${APP_IP}:${ARTIFACTORY_PORT}/artifactory/gradle-dev-local/"
 CURRENT_DIR="$( pwd )"
 PROJECT_NAME="${PROJECT_NAME:-cloudcontract-producer}"
 PROJECT_GROUP="${PROJECT_GROUP:-com.datson}"
 PROJECT_VERSION="${PROJECT_VERSION:-2.0.0-SNAPSHOT}"
+USER="${USER:-admin}"
+PASSWORD="${PASSWORD:-admin123}"
+
+echo "PROJECT_NAME: ${PROJECT_NAME}"
+
 
 echo "Sc Contract Version [${SC_CONTRACT_DOCKER_VERSION}]"
 echo "Application URL [${APPLICATION_BASE_URL}]"
@@ -28,6 +35,8 @@ sudo docker run --rm \
 -e "PROJECT_GROUP=${PROJECT_GROUP}" \
 -e "REPO_WITH_BINARIES_URL=${ARTIFACTORY_URL}" \
 -e "PROJECT_VERSION=${PROJECT_VERSION}" \
+-e "REPO_WITH_BINARIES_USERNAME=${USER}" \
+-e "REPO_WITH_BINARIES_PASSWORD=${PASSWORD}" \
 -v "${CURRENT_DIR}/contracts/:/contracts:ro" \
 -v "${CURRENT_DIR}/build/spring-cloud-contract/output:/spring-cloud-contract-output/" \
 springcloud/spring-cloud-contract:"${SC_CONTRACT_DOCKER_VERSION}"
