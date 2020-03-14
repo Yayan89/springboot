@@ -1,0 +1,26 @@
+spring:
+  #  rabbitmq:
+  #    addresses: amqp://qzyqilho:u-miXyZNfYdkGBG9dM-S2RUVEWbARDij@clam.rmq.cloudamqp.com/qzyqilho
+  cloud:
+    stream:
+      bindings:
+        #        greetingChannel:
+        #          destination: greetings
+        #          group: greetings-group
+        rfgCalculsChannel:
+          destionation: calcul
+          binder: rfg_rabbit
+          group: rfg
+      binders:
+        rfg_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                addresses: amqp://desaauzr:LZPt1KfaVxNiKBYgJtO-Nw7_fQNnjZJY@barnacle.rmq.cloudamqp.com/desaauzr
+#                port: 5672
+#                username: desaauzr
+#                password: LZPt1KfaVxNiKBYgJtO-Nw7_fQNnjZJY
+#                    virtual-host:
+server:
+  port: 9090
