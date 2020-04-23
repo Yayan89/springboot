@@ -1,0 +1,34 @@
+spring:
+  rabbitmq:
+    addresses: amqp://qzyqilho:u-miXyZNfYdkGBG9dM-S2RUVEWbARDij@clam.rmq.cloudamqp.com/qzyqilho
+    cloud:
+      stream:
+        bindings:
+          greetingChannel:
+            destination: greetings
+          messageChannel:
+            destination: somwhereInTheConsumer
+#          binder: external_rabbit
+#      binders:
+#        external_rabbit:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                addresses:
+#                host: amqp://desaauzr:LZPt1KfaVxNiKBYgJtO-Nw7_fQNnjZJY@barnacle.rmq.cloudamqp.com/desaauzr
+##                port: 5672
+##                username: <username>
+##                password: <password>
+##                virtual-host:
+#        internal_rabbit:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                addresses:
+#                host: amqp://qzyqilho:u-miXyZNfYdkGBG9dM-S2RUVEWbARDij@clam.rmq.cloudamqp.com/qzyqilho
+
+server:
+  port: 8080
+

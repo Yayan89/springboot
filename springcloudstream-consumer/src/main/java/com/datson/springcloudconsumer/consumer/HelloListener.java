@@ -6,7 +6,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 @EnableBinding(HelloBinding.class)
 public class HelloListener {
 
-    @StreamListener(target = HelloBinding.GREETING)
+    @StreamListener(value = HelloBinding.GREETING, condition = "payload < 10")
     public void processHelloChannelGreeting(String msg) {
         System.out.println(msg);
     }

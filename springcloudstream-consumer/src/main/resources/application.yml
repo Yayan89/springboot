@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    addresses: amqp://qzyqilho:u-miXyZNfYdkGBG9dM-S2RUVEWbARDij@clam.rmq.cloudamqp.com/qzyqilho
+    cloud:
+      stream:
+        bindings:
+          greetingChannel:
+            destination: greetings
+            group: greetings-group
+          messageChannel:
+            destination: somwhereInTheConsumer
+server:
+  port: 9090

@@ -1,0 +1,30 @@
+Effective_Java Joshua_Bloch
+
+Item_1:
+  tips1: Is your class name too long? use Static Factory Method (SFM)
+  tips2: SFM can return anything
+  tips3: encapsulate logic from constructor
+  tips4: easily use Singleton Pattern
+Item10:
+  tips1: Is it logically equally for this class?
+  tips2: reflexive, symmtric, transitive -> use composition
+Item 17:
+  tips1: Try to make all classes immutable, with final, or simply with SFM
+  tips2: major disavantage is require seperate object each distinct value during object creation, can be costly
+Item 18, 19, 20, 21:
+  tips1: shoudl we let it subclass? use final, private constructor, SFM
+  tips2: use composition over inheritance (Decorator Pattern), classA ext classB, classB implement interface (use composition)
+  tips3: if wish to use interface and abstract, use Template (skeletal implementation)
+  tips4: use default only if critical, useful for standard method implementation when interface is create
+  tips5: document implementation with @implSpec
+Items 24:
+  tips1: favor nested static class over non-static nested class, useful as helper class
+  tips2: non-static nested class can add lot of overhead
+  tips3: use local nested class in method only if use several time or increase readability, or use anonymous for once
+Item 34:
+  tips1: Enum should be top-class, sometimes nested if its closely related
+  tips2: use abstract method to reinfoce Enum
+
+
+
+    
