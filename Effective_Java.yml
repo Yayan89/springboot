@@ -23,7 +23,15 @@ Items 24:
   tips3: use local nested class in method only if use several time or increase readability, or use anonymous for once
 Item 34:
   tips1: Enum should be top-class, sometimes nested if its closely related
-  tips2: use abstract method to reinfoce Enum
+  tips2: use abstract method to reinfoce Enum or interface
+Item 37, 38:
+  tips1: EnumSet is faster than HashSet, EnumpMap is very useful for enum-enum classes
+  tips2: to reinforce method in enum, use abstract or interface
+
+Item 58: consider implementing Iterable for class, gives foreach capability
+Item 63: big string concatenation logic, use StringBuilder
+
+
 
 
 
