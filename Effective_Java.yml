@@ -29,6 +29,15 @@ Item 37, 38:
   tips1: EnumSet is faster than HashSet, EnumpMap is very useful for enum-enum classes
   tips2: to reinforce method in enum, use abstract or interface
 
+Item 49:
+  tips1: always use parameter validity for public methods
+  tips2: Objects.requiredNonNull
+  tips3: Objects.rangeCheck for arrays or list, etc,
+  tips4: private methods, use assert keyword (optional)
+Items 50: Immutability
+  tips1: gives copies of object
+  tips2: check for composition, easily break immutability
+  tips3: arrays are mutable, return immutable always
 Item 58: consider implementing Iterable for class, gives foreach capability
 Item 63: big string concatenation logic, use StringBuilder
 
